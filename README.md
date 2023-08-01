@@ -1,4 +1,4 @@
-Entrega CLASE 34 - LOGGER Y PERFOMANCE
+Entrega CLASE 34 - LOGGER Y PERFOMANCE - MAILING
 
 Definición de niveles de prioridad con Winston Logger
 -Creo logger.service.js y según el entorno de trabajo tengo su nivel de prioridad
@@ -7,6 +7,7 @@ Definición de niveles de prioridad con Winston Logger
 
 -Creo archivos dev.env y prod.env para desarrollo y producción.
 -Creo endpoint /loggerTest para prueba de errores por medio del router logger.router,js
+-Creo router para mailing (mailer.router.js) y endpoint /mail
 
 ----------------------------------------------------------------
 

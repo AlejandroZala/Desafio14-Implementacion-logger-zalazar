@@ -10,7 +10,8 @@ import winston from 'winston';
 import attachLogger from './middlewares/logger.js';
 import {Server} from 'socket.io';
 
-import userErrorsRouter from './routes/userErrors.router.js'
+import mailerRouter from './routes/mailer.router.js';
+import userErrorsRouter from './routes/userErrors.router.js';
 import errorHandler from './middlewares/error.js';
 import loggerTestRouter from './routes/logger.router.js';
 import productMocksRouter from './routes/productsMocks.router.js';
@@ -55,6 +56,7 @@ app.use(cookieParser());
 initializePassportStrategies();
 
 app.use('/', loggerTestRouter)
+app.use('/', mailerRouter);
 app.use('/api/userErrors', userErrorsRouter);
 app.use('/api/mockingProducts',productMocksRouter);
 app.use('/api/mockingUsers', userMocksRouter);

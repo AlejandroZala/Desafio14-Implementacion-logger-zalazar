@@ -6,7 +6,7 @@ Definición de niveles de prioridad con Winston Logger
     Si ejecuto npm run prod -> uso port 5000, nivel de prioridad 3 (info)
 
 -Creo archivos dev.env y prod.env para desarrollo y producción.
--
+-Creo endpoint /loggerTest para prueba de errores por medio del router logger.router,js
 
 ----------------------------------------------------------------
 
